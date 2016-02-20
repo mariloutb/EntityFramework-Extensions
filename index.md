@@ -43,7 +43,7 @@ layout: post
 					<div class="col-lg-6">
 						<div class="card">
 							<div class="card-block">
-								<h1 class="card-title">C# Bulk Operations</h1>
+								<h1 class="card-title">Entity Framework Extensions</h1>
 								<h3>Solve Entity Framework performance issue when saving with high performance bulk operations and hundred of flexibles feature.</h3>
 								<hr class="m-y-md" />
 								<div class="lead">
