@@ -75,7 +75,8 @@ context.BulkUpdate(customers);
 
 // Customize Primary Key
 context.BulkMerge(customers, operation => {
-   operation.ColumnPrimaryKeyExpression = customer => customer.Code;
+   operation.ColumnPrimaryKeyExpression = 
+        customer => customer.Code;
 });
 {% endhighlight %}	
 							</div>
@@ -147,7 +148,7 @@ context.BulkMerge(customers, operation => {
 				</ul>
 				
 				<!-- BulkSaveChanges !-->
-				<h2>Insert - Output Identity Value</h2>
+				<h2>BulkSaveChanges</h2>
 				<h3>Problem</h3>
 				<p>You need to save hundreds or thousands of entities but you are not satisfied with Entity Framework performance.</p>
 				<h3>Solution</h3>
@@ -283,18 +284,18 @@ context.BulkMerge(customers, operation => {
 								</select> 
 								<br />
 								<select id="single_product" name="os0" class="form-control">
-									<option value="1 seat">Bulk Operations $599 (1 seat)</option>
-									<option value="2-4 seats" selected>Bulk Operations $799 (2-4 seats)</option>
-									<option value="5-9 seats">Bulk Operations $999 (5-9 seats)</option>
-									<option value="10-14 seats">Bulk Operations $1199 (10-14 seats)</option>
-									<option value="15-19 seats">Bulk Operations $1399 (15-19 seats)</option>
+									<option value="1 seat">Entity Framework Extensions $599 (1 seat)</option>
+									<option value="2-4 seats" selected>Entity Framework Extensions $799 (2-4 seats)</option>
+									<option value="5-9 seats">Entity Framework Extensions $999 (5-9 seats)</option>
+									<option value="10-14 seats">Entity Framework Extensions $1199 (10-14 seats)</option>
+									<option value="15-19 seats">Entity Framework Extensions $1399 (15-19 seats)</option>
 								</select> 
 								<select id="bundle_product" name="os0" class="form-control">
-									<option value="1 seat">Bulk Operations $799 (1 seat)</option>
-									<option value="2-4 seats" selected>Bulk Operations $999 (2-4 seats)</option>
-									<option value="5-9 seats">Bulk Operations $1199 (5-9 seats)</option>
-									<option value="10-14 seats">Bulk Operations $1399 (10-14 seats)</option>
-									<option value="15-19 seats">Bulk Operations $1599 (15-19 seats)</option>
+									<option value="1 seat">BEntity Framework Extensions $799 (1 seat)</option>
+									<option value="2-4 seats" selected>Entity Framework Extensions $999 (2-4 seats)</option>
+									<option value="5-9 seats">Entity Framework Extensions $1199 (5-9 seats)</option>
+									<option value="10-14 seats">Entity Framework Extensions $1399 (10-14 seats)</option>
+									<option value="15-19 seats">Entity Framework Extensions $1599 (15-19 seats)</option>
 								</select> 
 							</fieldset>
 							<div class="checkbox">
