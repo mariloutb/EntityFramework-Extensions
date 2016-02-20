@@ -7,15 +7,14 @@ layout: post
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="description" content="C# Bulk Insert, update, delete and merge in SQL Server, SQL Azure, SQL Compact, MySQL and SQLite">
-		<meta name="keywords" content="BulkSaveChanges BulkInsert BulkUpdate BulkDelete BulkMerge Insert Update Delete Merge SQLServer SQLAzure SQLCompact MySQL SQLite">
+		<meta name="description" content="Improve entity framework performance with Bulk SaveChanges, Bulk Insert, update, delete and merge using your dbcontext. C# Entity Framework Library.">
+		<meta name="keywords" content="EntityFramework BulkSaveChanges BulkInsert BulkUpdate BulkDelete BulkMerge Insert Update Delete Merge SQLServer SQLAzure SQLCompact MySQL SQLite">
 		<meta name="msvalidate.01" content="89359D9C492A475C0061398008D105FB" />
-		<title>C# Bulk Insert, update, delete and merge in SQL Server, SQL Azure, SQL Compact, MySQL and SQLite</title>
-		<link rel="icon" type="image/png" href="http://bulk-operations.net/images/logo.png">
+		<title>EntityFramework Bulk Insert, update, delete and merge in SQL Server, SQL Azure, SQL Compact, MySQL and SQLite</title>
+		<link rel="icon" type="image/png" href="http://entityframework-extensions.net/images/logo.png">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<!-- todo: change me !-->
-		<link rel="stylesheet" type="text/css" href="http://bulk-operations.net/css/github.css">
+		<link rel="stylesheet" type="text/css" href="http://entityframework-extensions.net/css/github.css">
 	</head>
 	
 	<body>
@@ -45,11 +44,11 @@ layout: post
 						<div class="card">
 							<div class="card-block">
 								<h1 class="card-title">C# Bulk Operations</h1>
-								<h3>High performance C# Bulk Operations in SQL with hundreds of flexible features missing from SqlBulkCopy.</h3>
+								<h3>Solve Entity Framework performance issue when saving with high performance bulk operations and hundred of flexibles feature.</h3>
 								<hr class="m-y-md" />
 								<div class="lead">
-									<a href="https://www.nuget.org/packages/Z.BulkOperations/" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
-									<a href="https://github.com/zzzprojects/Bulk-Operations" target="_blank" class="btn btn-primary btn-lg btn-right" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>				
+									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
+									<a href="https://github.com/zzzprojects/EntityFramework-Extensions" target="_blank" class="btn btn-primary btn-lg btn-right" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>				
 								</div>
 							</div>
 						</div>
@@ -60,19 +59,24 @@ layout: post
 						<div class="card">
 							<div class="card-block card-code">
 {% highlight csharp %}
-// Support all type of operations
-var bulk = new BulkOperation(connection);
-bulk.BulkInsert(dt);
-bulk.BulkUpdate(dt);
-bulk.BulkDelete(dt);
-bulk.BulkMerge(dt);
+var context = new CustomerContext();
+// ... context code ...
 
-// Support Entity / Lambda Mapping
-var bulk = new BulkOperation<Customer>(connection);
-bulk.ColumnInputExpression = c => new { c.Name,  c.FirstName };
-bulk.ColumnOutputExpression = c => c.CustomerID;
-bulk.ColumnPrimaryKeyExpression = c => c.Code;
-bulk.BulkMerge(customers);
+// Easy to use
+context.BulkSaveChanges();
+
+// Easy to customize
+context.BulkSaveChanges(operation => operation.BatchSize = 1000);
+
+// Perform specific bulk operations
+context.BulkDelete(customers);
+context.BulkInsert(customers);
+context.BulkUpdate(customers);
+
+// Customize Primary Key
+context.BulkMerge(customers, operation => {
+   operation.ColumnPrimaryKeyExpression = customer => customer.Code;
+});
 {% endhighlight %}	
 							</div>
 						</div>
@@ -94,38 +98,39 @@ bulk.BulkMerge(customers);
 				<table class="table table-striped table-hover" style="background-color: white;">
 					<tr class="thead-inverse">
 						<th>Operations</th>
+						<th>100 Rows</th>
 						<th>1,000 Rows</th>
 						<th>10,000 Rows</th>
-						<th>100,000 Rows</th>
-						<th>1,000,000 Rows</th>
 					</tr>
 					<tr>
-						<th>Insert</th>
-						<td>6 ms</td>
-						<td>25 ms</td>
+						<th>BulkSaveChanges</th>
+						<td>20 ms</td>
 						<td>200 ms</td>
 						<td>2,000 ms</td>
 					</tr>
 					<tr>
+						<th>Insert</th>
+						<td>2 ms</td>
+						<td>6 ms</td>
+						<td>25 ms</td>
+					</tr>
+					<tr>
 						<th>Update</th>
+						<td>27 ms</td>
 						<td>50 ms</td>
 						<td>80 ms</td>
-						<td>575 ms</td>
-						<td>6,500 ms</td>
 					</tr>
 					<tr>
 						<th>Delete</th>
+						<td>25 ms</td>
 						<td>45 ms</td>
 						<td>70 ms</td>
-						<td>625 ms</td>
-						<td>6,800 ms</td>
 					</tr>
 					<tr>
 						<th>Merge</th>
+						<td>30 ms</td>
 						<td>65 ms</td>
 						<td>160 ms</td>
-						<td>1,200 ms</td>
-						<td>12,000 ms</td>
 					</tr>
 				</table>
 				<p class="font-italic">As fast as SqlBulkCopy for insert but with way more capabilities</p>
@@ -140,67 +145,57 @@ bulk.BulkMerge(customers);
 					<li>MySQL</li>
 					<li>SQLite</li>
 				</ul>
-
-				<p>Support Multiple DataSources:</p>
-				<ul>
-					<li>Entity</li>
-					<li>DataTable</li>
-					<li>DataRow</li>
-					<li>DataReader</li>
-					<li>DataSet</li>
-					<li>Expando Object</li>
-				</ul>
 				
-				<!-- Insert - Output Identity Value !-->
+				<!-- BulkSaveChanges !-->
 				<h2>Insert - Output Identity Value</h2>
 				<h3>Problem</h3>
-				<p>You need to output newly generated identity value but SqlBulkCopy do not support it.</p>
+				<p>You need to save hundreds or thousands of entities but you are not satisfied with Entity Framework performance.</p>
 				<h3>Solution</h3>
-				<p>Map your identity column with output direction.</p>
+				<p>BulkSaveChanges is exactly like SaveChanges but perform way faster. It’s easy to use, you only need to replace “SaveChanges” by “BulkSaveChanges” and you are done!</p>
 {% highlight csharp %}
-var bulk = new BulkOperation(connection);
+// Upgrade SaveChanges performance with BulkSaveChanges
+var context = new CustomerContext();
+// ... context code ...
 
-bulk.ColumnMappings.Add("CustomerID", ColumnMappingDirectionType.Output);
-// ... mappings ...
+// Easy to use
+context.BulkSaveChanges();
 
-bulk.BulkInsert(dt);
+// Easy to customize
+context.BulkSaveChanges(operation => operation.BatchSize = 1000);
 {% endhighlight %}	
-				<h3>Flexibility</h3>
-				<p>You can also output concurrency column (Timestamp) or any other column values. All kind of mapping direction are supported including "Formula" to use with a SQL Formula.</p>
+				<h3>Scalability</h3>
+				<p>BulkSaveChanges is as fast as SaveChanges with one entity and quickly become 10-50x faster with hundreds and thousands of entities.</p>
 				
-				<!-- Entity DataSource / Lambda Mapping !-->
-				<h2>Entity DataSource / Lambda Mapping</h2>
+				<!-- Bulk Operations !-->
+				<h2>Bulk Operations</h2>
 				<h3>Problem</h3>
-				<p>You have a list of entity to insert but SqlBulkCopy doesn't support entity and lambda expression mapping.</p>
+				<p>You need even more performance then BulkSaveChanges, save detached entities or save entities in a specific order.</p>
 				<h3>Solution</h3>
-				<p>Create a generic bulk operations with your entity type and use lambda expression for your column input, output and primary key mapping.</p>
+				<p>Use bulk operations such as bulk insert, update, delete and merge which perform operation on specified entities and bypass the change tracker to increase performance.</p>
 {% highlight csharp %}
-var bulk = new BulkOperation<Customer>(connection);
-
-bulk.ColumnInputExpression = c => new { c.Name,  c.FirstName };
-bulk.ColumnOutputExpression = c => c.CustomerID;
-bulk.ColumnPrimaryKeyExpression = c => c.Code;
-
-bulk.BulkMerge(customers);
+// Perform specific bulk operations on entities
+context.BulkDelete(customers);
+context.BulkInsert(customers);
+context.BulkUpdate(customers);
+context.BulkMerge(customers);
 {% endhighlight %}	
 				<h3>Maintainability</h3>
-				<p>Get rid of hardcoded string and use strongly-typed lambda expressions.</p>
+				<p>Bulk Operation use directly the Entity Framework Model. Even if you change column name or change inheritance (TPC, TPH, TPT), Bulk operation will continue to work as expected.</p>
 				
-				<!-- AutoMapping & Case Sensitivity !-->
-				<h2>AutoMapping & Case Sensitivity</h2>
+				<!-- Custom Key !-->
+				<h2>Custom Key</h2>
 				<h3>Problem</h3>
-				<p>You have a DataTable which columns name match name in the database but SqlBulkCopy throw an error because name match are case insensitive.</p>
+				<p>You need to perform an update, delete or merge using a specific custom key like the custom code.</p>
 				<h3>Solution</h3>
-				<p>Turn off case sensitivity with <b>IsCaseSensitive</b> property.</p>
+				<p>Specify your own key by customizing the operation.</p>
 {% highlight csharp %}
-var bulk = new BulkOperation(connection);
-
-bulk.IsCaseSensitive = false;
-
-bulk.BulkMerge(dt);
+// Use flexible features such as specifying the primary key
+context.BulkMerge(customers, operation => {
+   operation.ColumnPrimaryKeyExpression = customer => customer.Code;
+});
 {% endhighlight %}	
-				<h3>Readability</h3>
-				<p>Remove useless code which would have required to create your own mapping and keep the essentials.</p>
+				<h3>Flexibility</h3>
+				<p>Bulk operations offers hundred of customization such as BatchSize, Custom Key, Custom Mapping, etc.</p>
 			</div>
 		</div>
 		
@@ -220,7 +215,7 @@ bulk.BulkMerge(dt);
 							<li>Make your customer happier!</li>
 						</ul>
 						<hr class="m-y-md" />
-						<p>Every month, a <a href="https://www.nuget.org/packages/Z.BulkOperations/" target="_blank">FREE trial</a> of the PRO version is available to let you evaluate all its features without limitations.</p>					
+						<p>Every month, a <a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank">FREE trial</a> of the PRO version is available to let you evaluate all its features without limitations.</p>					
 					</div>
 					<div class="col-lg-6">
 						<table class="table table-hover table-bordered">
@@ -231,6 +226,10 @@ bulk.BulkMerge(dt);
 								</tr>
 							</thead>
 							<tbody>
+								<tr>
+									<th>Bulk SaveChanges</th>
+									<td><i class="fa fa-check-square-o fa-2x"></i></td>
+								</tr>
 								<tr>
 									<th>Bulk Insert</th>
 									<td><i class="fa fa-check-square-o fa-2x"></i></td>
@@ -245,14 +244,6 @@ bulk.BulkMerge(dt);
 								</tr>
 								<tr>
 									<th>Bulk Merge</th>
-									<td><i class="fa fa-check-square-o fa-2x"></i></td>
-								</tr>
-								<tr>
-									<th>Bulk SaveChanges</th>
-									<td><i class="fa fa-check-square-o fa-2x"></i></td>
-								</tr>
-								<tr>
-									<th>Bulk Synchronize</th>
 									<td><i class="fa fa-check-square-o fa-2x"></i></td>
 								</tr>
 								<tr>
@@ -284,11 +275,11 @@ bulk.BulkMerge(dt);
 							<fieldset class="form-group">
 								<input type="hidden" name="on0" value="Seats">
 								<select id="provider_type" name="hosted_button_id" class="form-control" onchange="selectProduct()">
-									<option value="P4LJES7RRRMRE">SQL Server/ Azure Provider</option>
-									<option value="VL4K5FXSRWV88">SQL Compact Provider</option>
-									<option value="MVSYAVJHUY9DS">SQLite Provider</option>
-									<option value="VEN7DRSDH74YQ">MySQL Provider</option>
-									<option value="YZLDF7MB7S66Q">ALL Providers</option>
+									<option value="GS977QXB98R2C">SQL Server/ Azure Provider</option>
+									<option value="5WVPWVNDGRHH6">SQL Compact Provider</option>
+									<option value="55WDUT7ENJBKU">SQLite Provider</option>
+									<option value="32JM43GUXW4ZW">MySQL Provider</option>
+									<option value="TSCGQDC4YR2MQ">ALL Providers</option>
 								</select> 
 								<br />
 								<select id="single_product" name="os0" class="form-control">
@@ -349,10 +340,10 @@ bulk.BulkMerge(dt);
 							<div class="card-block">
 								<h4 class="card-title">Documentation</h4>
 							</div>
-							<a href="https://github.com/zzzprojects/Bulk-Operations.NET/wiki" target="_blank"><i class="fa fa-folder-open fa-5x"></i></a>
+							<a href="https://github.com/zzzprojects/EntityFramework-Extensions/wiki" target="_blank"><i class="fa fa-folder-open fa-5x"></i></a>
 							<div class="card-block">
 								<p class="card-text">Consult our complete documentation to help you getting started.</p>
-								<a href="https://github.com/zzzprojects/Bulk-Operations.NET/wiki" target="_blank">Documentation</a>
+								<a href="https://github.com/zzzprojects/EntityFramework-Extensions/wiki" target="_blank">Documentation</a>
 							</div>
 						</div>
 					</div>
@@ -375,10 +366,10 @@ bulk.BulkMerge(dt);
 							<div class="card-block">
 								<h4 class="card-title">Forum</h4>
 							</div>
-							<a href="https://github.com/zzzprojects/Bulk-Operations.NET/issues" target="_blank"><i class="fa fa-weixin fa-5x"></i></a>
+							<a href="https://github.com/zzzprojects/EntityFramework-Extensions/issues" target="_blank"><i class="fa fa-weixin fa-5x"></i></a>
 							<div class="card-block">
 								<p class="card-text">Visit the forum to propose new features or to discuss about the library.</p>
-								<a href="https://github.com/zzzprojects/Bulk-Operations.NET/issues" target="_blank">Forum</a>
+								<a href="https://github.com/zzzprojects/EntityFramework-Extensions/issues" target="_blank">Forum</a>
 							</div>
 						</div>
 					</div>
@@ -388,10 +379,10 @@ bulk.BulkMerge(dt);
 							<div class="card-block">
 								<h4 class="card-title">Open Source</h4>
 							</div>
-							<a href="https://github.com/zzzprojects/Bulk-Operations.NET" target="_blank"><i class="fa fa-github fa-5x"></i></a>
+							<a href="https://github.com/zzzprojects/EntityFramework-Extensions" target="_blank"><i class="fa fa-github fa-5x"></i></a>
 							<div class="card-block">
 								<p class="card-text">Access the partial source of the library you're using. (Under development)</p>
-								<a href="https://github.com/zzzprojects/Bulk-Operations.NET" target="_blank">GitHub</a>
+								<a href="https://github.com/zzzprojects/EntityFramework-Extensions" target="_blank">GitHub</a>
 							</div>
 						</div>
 					</div>
@@ -464,7 +455,7 @@ bulk.BulkMerge(dt);
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-55584370-7', 'auto');
+	  ga('create', 'UA-55584370-8', 'auto');
 	  ga('send', 'pageview');
 	  
 	  function purchase_validate() {
@@ -478,7 +469,7 @@ bulk.BulkMerge(dt);
 	  
 	  $("#bundle_product").hide();
 	  function selectProduct() {
-		if($("#provider_type").val() == "YZLDF7MB7S66Q") {
+		if($("#provider_type").val() == "TSCGQDC4YR2MQ") {
 			$("#single_product").hide();
 			$("#bundle_product").show();
 		}
