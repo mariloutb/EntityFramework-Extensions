@@ -96,14 +96,15 @@ context.BulkMerge(customers, operation => {
 				<!-- Improve Performance !-->
 				<h2>Improve Performance</h2>
 				<div class="row">
-					<div class="col-lg-4">
+					<div class="col-lg-5">
+						<p class="feature-tagline">"Time is money”" and we all expect applications to respond as quickly as possible.</p>
 						<ul>
-							<li>Make your application run faster and smoother</li>
 							<li>Minimize the time your client wait</li>
-							<li>Increase the limit of data to save</li>
-						</ul>
+							<li>Maximize the time your client work</li>
+							<li>Make your client happy!</li>
+						</ul>						
 					</div>
-					<div class="col-lg-8">
+					<div class="col-lg-7">
 						<table class="table table-striped table-hover" style="background-color: white;">
 							<tr class="thead-inverse">
 								<th>Operations</th>
@@ -148,26 +149,25 @@ context.BulkMerge(customers, operation => {
 								<td>110 ms</td>
 							</tr>
 						</table>
+						
+						<p>* Benchmark for SQL Server</p>
 					</div>
 				</div>
-
-				<!-- Extensible !-->
-				<h2>Extensible</h2>
-				<p>Support Multiple SQL Providers:</p>
-				<ul>
-					<li>SQL Server 2008+</li>
-					<li>SQL Azure</li>
-					<li>SQL Compact</li>
-					<li>MySQL</li>
-					<li>SQLite</li>
-				</ul>
+				
+				<hr class="m-y-md" />
 				
 				<!-- BulkSaveChanges !-->
-				<h2>BulkSaveChanges</h2>
-				<h3>Problem</h3>
-				<p>You need to save hundreds or thousands of entities but you are not satisfied with Entity Framework performance.</p>
-				<h3>Solution</h3>
-				<p>BulkSaveChanges is exactly like SaveChanges but perform way faster. It’s easy to use, you only need to replace “SaveChanges” by “BulkSaveChanges” and you are done!</p>
+				<h2>Bulk SaveChanges</h2>
+				<div class="row">
+					<div class="col-lg-5">
+						<p class="feature-tagline">Improving your application performance couldn’t be made easier!</p>
+						<ul>
+							<li>Easy to use</li>
+							<li>Easy to customize</li>
+						</ul>
+
+					</div>
+					<div class="col-lg-7">
 {% highlight csharp %}
 // Upgrade SaveChanges performance with BulkSaveChanges
 var context = new CustomerContext();
@@ -178,16 +178,24 @@ context.BulkSaveChanges();
 
 // Easy to customize
 context.BulkSaveChanges(operation => operation.BatchSize = 1000);
-{% endhighlight %}	
-				<h3>Scalability</h3>
-				<p>BulkSaveChanges is as fast as SaveChanges with one entity and quickly become 10-50x faster with hundreds and thousands of entities.</p>
+{% endhighlight %}
+					</div>
+				</div>
+
+				<hr class="m-y-md" />
 				
 				<!-- Bulk Operations !-->
 				<h2>Bulk Operations</h2>
-				<h3>Problem</h3>
-				<p>You need even more performance then BulkSaveChanges, save detached entities or save entities in a specific order.</p>
-				<h3>Solution</h3>
-				<p>Use bulk operations such as bulk insert, update, delete and merge which perform operation on specified entities and bypass the change tracker to increase performance.</p>
+				<div class="row">
+					<div class="col-lg-5">
+						<p class="feature-tagline">Join thousands of projects already using reliable and robust bulk operations.</p>
+						<ul>
+							<li>Maximized performance</li>
+							<li>Maximized user experience</li>
+						</ul>
+						
+					</div>
+					<div class="col-lg-7">
 {% highlight csharp %}
 // Perform specific bulk operations on entities
 context.BulkDelete(customers);
@@ -195,23 +203,33 @@ context.BulkInsert(customers);
 context.BulkUpdate(customers);
 context.BulkMerge(customers);
 {% endhighlight %}	
-				<h3>Maintainability</h3>
-				<p>Bulk Operation use directly the Entity Framework Model. Even if you change column name or change inheritance (TPC, TPH, TPT), Bulk operation will continue to work as expected.</p>
+					</div>
+				</div>
 				
-				<!-- Custom Key !-->
-				<h2>Custom Key</h2>
-				<h3>Problem</h3>
-				<p>You need to perform an update, delete or merge using a specific custom key like the custom code.</p>
-				<h3>Solution</h3>
-				<p>Specify your own key by customizing the operation.</p>
+				<hr class="m-y-md" />
+				
+				<!-- Flexible Features !-->
+				<h2>Flexible Features</h2>
+				<div class="row">
+					<div class="col-lg-5">
+						<p class="feature-tagline">Don’t be limited by Entity Framework and customize operation like you really want.</p>
+						<ul>
+							<li>Choose your batch size</li>
+							<li>Choose your columns</li>
+							<li>Choose your primary key</li>
+						</ul>
+						
+					</div>
+					<div class="col-lg-7">
 {% highlight csharp %}
 // Use flexible features such as specifying the primary key
 context.BulkMerge(customers, operation => {
+   operation.BatchSize = 1000;
    operation.ColumnPrimaryKeyExpression = customer => customer.Code;
 });
 {% endhighlight %}	
-				<h3>Flexibility</h3>
-				<p>Bulk operations offers hundred of customization such as BatchSize, Custom Key, Custom Mapping, etc.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		
@@ -237,7 +255,7 @@ context.BulkMerge(customers, operation => {
 						<table class="table table-hover table-bordered">
 							<thead class="thead-inverse">
 								<tr>
-									<th></th>
+									<th>Features</th>
 									<th>PRO</th>
 								</tr>
 							</thead>
@@ -684,11 +702,10 @@ header .card .card-contents a:hover {
 
 /* feature */
 #feature h2 {
-	border-bottom: 2px solid #000;
-	font-size: 32px;
-	letter-spacing: 2px;
-	padding-top: 30px;
-	padding-bottom: 10px;
+	font-size: 48px;
+	letter-spacing: 4px;
+	padding-top: 60px;
+	padding-bottom: 30px;
 }
 #feature h3 {
 	letter-spacing: 1px;
@@ -696,6 +713,21 @@ header .card .card-contents a:hover {
 	font-weight: 700;
 	padding-top: 10px;
 }
+
+#feature hr {
+	margin-top: 60px;
+}
+
+#feature ul li {
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#feature .feature-tagline {
+	font-style: italic;
+}
+
 #feature .btn {
 	margin-top: 40px;
 }
