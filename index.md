@@ -238,10 +238,11 @@ context.BulkMerge(customers, operation => {
 					<div class="col-lg-6">
 						<h2>Pricing</h2>
 						<hr class="m-y-md" />
+						<p class="pricing-tagline">Dramatically improve your application performance</p>
 						<ul>
-							<li>Make your application work faster</li>
-							<li>Make your customer do their job better</li>
-							<li>Make your customer happier!</li>
+							<li>Without learning a new product</li>
+							<li>Without learning a new API</li>
+							<li>Work as intended!</li>
 						</ul>
 						<hr class="m-y-md" />
 						<p>Every month, a <a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank">FREE trial</a> of the PRO version is available to let you evaluate all its features without limitations.</p>					
@@ -739,6 +740,11 @@ header .card .card-contents a:hover {
 #pricing h2 {
 	margin-bottom: -10px;
 }
+
+#pricing .pricing-tagline {
+	font-style: italic;
+}
+
 #pricing .table thead th {
 	text-align: center;
 }
