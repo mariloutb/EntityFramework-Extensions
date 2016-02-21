@@ -246,6 +246,8 @@ context.BulkMerge(customers, operation => {
 						</ul>
 						<hr class="m-y-md" />
 						<p>Every month, a <a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank">FREE trial</a> of the PRO version is available to let you evaluate all its features without limitations.</p>					
+						<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/entity-framework-extensions-v.svg" alt="download" /></a>
+						<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/entity-framework-extensions-d.svg" alt="" /></a>		
 					</div>
 					<div class="col-lg-6">
 						<table class="table table-hover table-bordered">
