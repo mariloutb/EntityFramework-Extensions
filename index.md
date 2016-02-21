@@ -462,7 +462,7 @@ context.BulkMerge(customers, operation => {
 	  }
 	  
 	  function selectProduct() {
-		if($("#provider_type").val() == "YZLDF7MB7S66Q") {
+		if($("#provider_type").val() == "TSCGQDC4YR2MQ") {
 			$("#seat1").html("Entity Framework Extensions $799 (1 seat)");
 			$("#seat2_4").html("Entity Framework Extensions $999 (2-4 seats)");
 			$("#seat5_9").html("Entity Framework Extensions $1199 (5-9 seats)");
