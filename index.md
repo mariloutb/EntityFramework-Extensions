@@ -7,10 +7,10 @@ layout: post
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="description" content="Improve entity framework performance with Bulk SaveChanges, Bulk Insert, update, delete and merge using your dbcontext. C# Entity Framework Library.">
+		<meta name="description" content="Improve Entity Framework performance with Bulk SaveChanges and Bulk Operations">
 		<meta name="keywords" content="EntityFramework BulkSaveChanges BulkInsert BulkUpdate BulkDelete BulkMerge Insert Update Delete Merge SQLServer SQLAzure SQLCompact MySQL SQLite">
 		<meta name="msvalidate.01" content="89359D9C492A475C0061398008D105FB" />
-		<title>EntityFramework Bulk Insert, update, delete and merge in SQL Server, SQL Azure, SQL Compact, MySQL and SQLite</title>
+		<title>Entity Framework Bulk Operations | Improve Entity Framework performance with Bulk SaveChanges, Insert, update, delete and merge for SQL Server, SQL Azure, SQL Compact, MySQL and SQLite.</title>
 		<link rel="icon" type="image/png" href="http://entityframework-extensions.net/images/logo.png">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -43,8 +43,8 @@ layout: post
 					<div class="col-lg-6">
 						<div class="card">
 							<div class="card-block">
-								<h1 class="card-title">Entity Framework Extensions</h1>
-								<h3>Solve Entity Framework performance issue when saving with high performance bulk operations and hundred of flexibles feature.</h3>
+								<h3 class="card-title">Entity Framework Extensions</h3>
+								<h1>Improve Entity Framework performance with Bulk SaveChanges and Bulk Operations</h1>
 								<hr class="m-y-md" />
 								<div class="lead">
 									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
@@ -604,10 +604,10 @@ header .card {
 	border: none;
 	color: #f1f1f1;
 }
-header .card h1 {
+header .card h3 {
 	font-size: 3.0rem;
 }
-header .card h3 {
+header .card h1 {
 	font-size: 1.3rem;
 }
 header .card hr {
