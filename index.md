@@ -66,9 +66,9 @@ var context = new CustomerContext();
 context.BulkSaveChanges();
 
 // Easy to customize
-context.BulkSaveChanges(operation => operation.BatchSize = 1000);
+context.BulkSaveChanges(operation => operation.BatchSize = 100);
 
-// Perform specific bulk operations
+// Perform Bulk Operations
 context.BulkDelete(customers);
 context.BulkInsert(customers);
 context.BulkUpdate(customers);
@@ -169,10 +169,6 @@ context.BulkMerge(customers, operation => {
 					</div>
 					<div class="col-lg-7">
 {% highlight csharp %}
-// Upgrade SaveChanges performance with BulkSaveChanges
-var context = new CustomerContext();
-// ... context code ...
-
 // Easy to use
 context.BulkSaveChanges();
 
@@ -197,7 +193,6 @@ context.BulkSaveChanges(operation => operation.BatchSize = 1000);
 					</div>
 					<div class="col-lg-7">
 {% highlight csharp %}
-// Perform specific bulk operations on entities
 context.BulkDelete(customers);
 context.BulkInsert(customers);
 context.BulkUpdate(customers);
@@ -222,7 +217,6 @@ context.BulkMerge(customers);
 					</div>
 					<div class="col-lg-7">
 {% highlight csharp %}
-// Use flexible features such as specifying the primary key
 context.BulkMerge(customers, operation => {
    operation.BatchSize = 1000;
    operation.ColumnPrimaryKeyExpression = customer => customer.Code;
