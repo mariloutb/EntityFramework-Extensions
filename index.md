@@ -66,7 +66,7 @@ var context = new CustomerContext();
 context.BulkSaveChanges();
 
 // Easy to customize
-context.BulkSaveChanges(operation => operation.BatchSize = 100);
+context.BulkSaveChanges(bulk => bulk.BatchSize = 100);
 
 // Perform Bulk Operations
 context.BulkDelete(customers);
