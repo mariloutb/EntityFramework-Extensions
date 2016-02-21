@@ -94,9 +94,14 @@ context.BulkMerge(customers, operation => {
 			<div class="container">
 			
 				<!-- Improve Performance !-->
+				<h2>Improve Performance</h2>
 				<div class="row">
 					<div class="col-lg-4">
-						<h2>Improve Performance</h2>
+						<ul>
+							<li>Make your application run faster and smoother</li>
+							<li>Minimize the time your client wait</li>
+							<li>Increase the limit of data to save</li>
+						</ul>
 					</div>
 					<div class="col-lg-8">
 						<table class="table table-striped table-hover" style="background-color: white;">
