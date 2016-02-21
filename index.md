@@ -48,7 +48,8 @@ layout: post
 								<hr class="m-y-md" />
 								<div class="lead">
 									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
-									<a href="https://github.com/zzzprojects/EntityFramework-Extensions" target="_blank" class="btn btn-primary btn-lg btn-right" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>				
+									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/entity-framework-extensions-v.svg" alt="download" /></a>
+									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/entity-framework-extensions-d.svg" alt="" /></a>			
 								</div>
 							</div>
 						</div>
