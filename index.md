@@ -93,54 +93,58 @@ context.BulkMerge(customers, operation => {
 		<div id="feature">
 			<div class="container">
 			
-				<!-- Scalable !-->
-				<h2>Scalable</h2>
-				<p>SQL Server - Benchmarks</p>
-				<table class="table table-striped table-hover" style="background-color: white;">
-					<tr class="thead-inverse">
-						<th>Operations</th>
-						<th>1,000 Entities</th>
-						<th>2,000 Entities</th>
-						<th>5,000 Entities</th>
-					</tr>
-					<tr>
-						<th>SaveChanges</th>
-						<td>1,000 ms</td>
-						<td>2,000 ms</td>
-						<td>5,000 ms</td>
-					</tr>
-					<tr>
-						<th>BulkSaveChanges</th>
-						<td>90 ms</td>
-						<td>150 ms</td>
-						<td>350 ms</td>
-					</tr>
-					<tr>
-						<th>BulkInsert</th>
-						<td>6 ms</td>
-						<td>10 ms</td>
-						<td>15 ms</td>
-					</tr>
-					<tr>
-						<th>BulkUpdate</th>
-						<td>50 ms</td>
-						<td>55 ms</td>
-						<td>65 ms</td>
-					</tr>
-					<tr>
-						<th>BulkDelete</th>
-						<td>45 ms</td>
-						<td>50 ms</td>
-						<td>60 ms</td>
-					</tr>
-					<tr>
-						<th>BulkMerge</th>
-						<td>65 ms</td>
-						<td>80 ms</td>
-						<td>110 ms</td>
-					</tr>
-				</table>
-				<p class="font-italic">As fast as SqlBulkCopy for insert but with way more capabilities</p>
+				<!-- Improve Performance !-->
+				<div class="row">
+					<div class="col-lg-4">
+						<h2>Improve Performance</h2>
+					</div>
+					<div class="col-lg-8">
+						<table class="table table-striped table-hover" style="background-color: white;">
+							<tr class="thead-inverse">
+								<th>Operations</th>
+								<th>1,000 Entities</th>
+								<th>2,000 Entities</th>
+								<th>5,000 Entities</th>
+							</tr>
+							<tr>
+								<th>SaveChanges</th>
+								<td>1,000 ms</td>
+								<td>2,000 ms</td>
+								<td>5,000 ms</td>
+							</tr>
+							<tr>
+								<th>BulkSaveChanges</th>
+								<td>90 ms</td>
+								<td>150 ms</td>
+								<td>350 ms</td>
+							</tr>
+							<tr>
+								<th>BulkInsert</th>
+								<td>6 ms</td>
+								<td>10 ms</td>
+								<td>15 ms</td>
+							</tr>
+							<tr>
+								<th>BulkUpdate</th>
+								<td>50 ms</td>
+								<td>55 ms</td>
+								<td>65 ms</td>
+							</tr>
+							<tr>
+								<th>BulkDelete</th>
+								<td>45 ms</td>
+								<td>50 ms</td>
+								<td>60 ms</td>
+							</tr>
+							<tr>
+								<th>BulkMerge</th>
+								<td>65 ms</td>
+								<td>80 ms</td>
+								<td>110 ms</td>
+							</tr>
+						</table>
+					</div>
+				</div>
 
 				<!-- Extensible !-->
 				<h2>Extensible</h2>
