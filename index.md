@@ -97,7 +97,7 @@ context.BulkMerge(customers, operation => {
 				<h2>Improve Performance</h2>
 				<div class="row">
 					<div class="col-lg-5">
-						<p class="feature-tagline">"Time is money”" and we all expect applications to respond as quickly as possible.</p>
+						<p class="feature-tagline">"Time is money" and your client expect applications to respond as quickly as possible.</p>
 						<ul>
 							<li>Minimize the time your client wait</li>
 							<li>Maximize the time your client work</li>
