@@ -99,39 +99,45 @@ context.BulkMerge(customers, operation => {
 				<table class="table table-striped table-hover" style="background-color: white;">
 					<tr class="thead-inverse">
 						<th>Operations</th>
-						<th>100 Rows</th>
-						<th>1,000 Rows</th>
-						<th>10,000 Rows</th>
+						<th>1,000 Entities</th>
+						<th>2,000 Entities</th>
+						<th>5,000 Entities</th>
+					</tr>
+					<tr>
+						<th>SaveChanges</th>
+						<td>1,000 ms</td>
+						<td>2,000 ms</td>
+						<td>5,000 ms</td>
 					</tr>
 					<tr>
 						<th>BulkSaveChanges</th>
-						<td>20 ms</td>
-						<td>200 ms</td>
-						<td>2,000 ms</td>
+						<td>90 ms</td>
+						<td>150 ms</td>
+						<td>350 ms</td>
 					</tr>
 					<tr>
-						<th>Insert</th>
-						<td>2 ms</td>
+						<th>BulkInsert</th>
 						<td>6 ms</td>
-						<td>25 ms</td>
+						<td>10 ms</td>
+						<td>15 ms</td>
 					</tr>
 					<tr>
-						<th>Update</th>
-						<td>27 ms</td>
+						<th>BulkUpdate</th>
 						<td>50 ms</td>
-						<td>80 ms</td>
-					</tr>
-					<tr>
-						<th>Delete</th>
-						<td>25 ms</td>
-						<td>45 ms</td>
-						<td>70 ms</td>
-					</tr>
-					<tr>
-						<th>Merge</th>
-						<td>30 ms</td>
+						<td>55 ms</td>
 						<td>65 ms</td>
-						<td>160 ms</td>
+					</tr>
+					<tr>
+						<th>BulkDelete</th>
+						<td>45 ms</td>
+						<td>50 ms</td>
+						<td>60 ms</td>
+					</tr>
+					<tr>
+						<th>BulkMerge</th>
+						<td>65 ms</td>
+						<td>80 ms</td>
+						<td>110 ms</td>
 					</tr>
 				</table>
 				<p class="font-italic">As fast as SqlBulkCopy for insert but with way more capabilities</p>
