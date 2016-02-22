@@ -98,11 +98,11 @@ context.BulkMerge(customers, operation => {
 				<h2>Improve Performance</h2>
 				<div class="row">
 					<div class="col-lg-5">
-						<p class="feature-tagline">"Time is money" and your client expect applications to respond as quickly as possible.</p>
+						<p class="feature-tagline">"Time is money" and your customers expect applications to respond as quickly as possible.</p>
 						<ul>
-							<li>Minimize the time your client wait</li>
-							<li>Maximize the time your client work</li>
-							<li>Make your client happy!</li>
+							<li>Minimize the time your customers wait</li>
+							<li>Maximize the time your customers work</li>
+							<li>Make your customers happy!</li>
 						</ul>						
 					</div>
 					<div class="col-lg-7">
