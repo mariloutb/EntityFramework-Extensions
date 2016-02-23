@@ -104,7 +104,6 @@ context.BulkMerge(customers, operation => {
 							<li>PostgreSQL <i>(Coming soon)</i></li>
 							<li>Oracle <i>(Coming soon)</i></li>
 						</ul>	
-						<p>We still doesn't support your provider? Let us know and we will make it happen: <a href="mailto:info@zzzprojects.com">info@zzzprojects.com</a></p>
 					</div>
 					<div class="col-lg-7">
 						<table class="table table-striped table-hover" style="background-color: white;">
