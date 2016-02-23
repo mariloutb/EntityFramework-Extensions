@@ -19,6 +19,7 @@ layout: post
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="http://entityframework-plus.net/css/github2.css">
+		<link rel="stylesheet" type="text/css" href="http://entityframework-plus.net/css/default.css">
 	</head>
 	
 	<body>
@@ -216,10 +217,16 @@ context.BulkSaveChanges(operation => operation.BatchSize = 1000);
 					</div>
 					<div class="col-lg-7">
 {% highlight csharp %}
-context.BulkDelete(customers);
+// Use all kind of bulk operations
 context.BulkInsert(customers);
 context.BulkUpdate(customers);
-context.BulkMerge(customers);
+context.BulkDelete(customers);
+
+// Customize your operation
+context.BulkMerge(customers, operation => {
+   operation.BatchSize = 1000;
+   operation.ColumnPrimaryKeyExpression = customer => customer.Code;
+});
 {% endhighlight %}	
 					</div>
 				</div>
@@ -240,20 +247,25 @@ context.BulkMerge(customers);
 					</div>
 					<div class="col-lg-7">
 {% highlight csharp %}
-context.BulkMerge(customers, operation => {
-   operation.BatchSize = 1000;
-   operation.ColumnPrimaryKeyExpression = customer => customer.Code;
-});
+var context = new CustomerContext();
+
+// DELETE all customers that are inactive for more than 2 years
+context.Customers
+    .Where(x => x.LastLogin < DateTime.Now.AddYears(-2))
+    .DeleteFromQuery(operation => operation.BatchSize = 10000);
+ 
+// UPDATE all customers that are inactive for more than 2 years
+context.Customers
+    .Where(x => x.Actif && x.LastLogin < DateTime.Now.AddYears(-2))
+    .UpdateFromQuery(x => new Customer {Actif = false});
 {% endhighlight %}	
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		
-		<!-- anchor !-->
-		<a id="support" href="#">
 		<!-- support !-->
+		<a id="support" href="#"></a>
 		<div id="support">
 			<div class="container">
 				<h2>Test our outstanding Support</h2>
@@ -315,10 +327,8 @@ context.BulkMerge(customers, operation => {
 			</div>
 		</div>
 		
-		<!-- anchor !-->
-		<a id="pricing" href="#"></a>
-		<a id="pro" href="#"></a>
 		<!-- pricing !-->
+		<a id="pro" href="#"></a>
 		<div id="pricing">
 			<div class="container">
 				<div class="row">
@@ -537,300 +547,3 @@ context.BulkMerge(customers, operation => {
 	</script>
 	</body>
 </html>
-
-<style>
-/* general */
-* {
-	 font-family: "Bitter",Georgia,"Times New Roman",serif;
-}
-.highlight * {
-	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-}
-.text-bold-red {
-	color: #c00;
-	font-weight: 700;
-}
-@media (max-width: 61em) {
-	.text-center-md-down {
-		text-align: center;
-	}
-}
-@media (max-width: 33em) {
-	.text-center-xs-down {
-		text-align: center;
-	}
-}
-@media (min-width: 62em) {
-	.text-right-lg-up {
-		text-align: right;
-	}
-}
-
-/* section general */
-#top-header {
-	background-color: #111;
-	border-bottom: 1px solid #000;
-	font-size: 14px;
-	padding: 5px 0px;
-}
-header {
-	background: -moz-linear-gradient(top, #222, #333);
-    background: -webkit-linear-gradient(top, #222, #333);
-    background: -ms-linear-gradient(top, #222, #333);
-    background: -o-linear-gradient(top, #222, #333);
-    background: linear-gradient(top, #222, #333);
-	border-bottom: 1px solid #111;
-	border-top: 1px solid #333;
-	padding: 40px 0px;
-}
-#featured {
-	border-bottom: 1px solid #ddd;
-    border-top: 1px solid #eee;
-	padding-bottom: 60px;
-}
-#testimonials {
-    background: -moz-linear-gradient(top, #ddd, #f2f2f2);
-    background: -webkit-linear-gradient(top, #ddd, #f2f2f2);
-    background: -ms-linear-gradient(top, #ddd, #f2f2f2);
-    background: -o-linear-gradient(top, #ddd, #f2f2f2);
-    background: linear-gradient(top, #ddd, #f2f2f2);
-	border-bottom: 1px solid #ddd;
-    border-top: 1px solid #eee;
-	padding-bottom: 60px;
-}
-#feature {
-	border-bottom: 1px solid #ddd;
-    border-top: 1px solid #eee;
-	padding-bottom: 60px;
-}
-#pricing {
-	background-color: #fefefe;
-	padding-top: 60px;
-	padding-bottom: 60px;
-}
-#support {
-	background: -moz-linear-gradient(top, #222, #333);
-    background: -webkit-linear-gradient(top, #222, #333);
-    background: -ms-linear-gradient(top, #222, #333);
-    background: -o-linear-gradient(top, #222, #333);
-    background: linear-gradient(top, #222, #333);
-	border-bottom: 1px solid #ddd;
-    border-top: 1px solid #eee;
-	color: #fff;
-	text-align: center;
-	padding-top: 60px;
-	padding-bottom: 60px;
-}
-#product {
-    background: -moz-linear-gradient(top, #111, #222);
-    background: -webkit-linear-gradient(top, #111, #222);
-    background: -ms-linear-gradient(top, #111, #222);
-    background: -o-linear-gradient(top, #111, #222);
-    background: linear-gradient(top, #111, #222);
-	border-bottom: 1px solid #111;
-	border-top: 1px solid #333;
-	color: #fefefe;
-	padding: 20px 0px;
-}
-footer {
-	background: -moz-linear-gradient(top, #333, #222);
-    background: -webkit-linear-gradient(top, #333, #222);
-    background: -ms-linear-gradient(top, #333, #222);
-    background: -o-linear-gradient(top, #333, #222);
-    background: linear-gradient(top, #333, #222);
-	border-top: 1px solid #444;
-	color: #666;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-/* top-header */
-#top-header a {
-	color: #fefefe;
-	padding: 0 10px;
-	text-decoration: none;
-} 
-#top-header a:hover {
-	opacity: 0.7;
-    transition: all 0.4s ease-in-out 0s;
-}
-
-/* header */
-header .card {
-	background-color: transparent;
-	border: none;
-	color: #fff;
-}
-header .card h1 {
-	font-size: 2.3rem;
-}
-header .card h3 {
-	font-size: 1.3rem;
-}
-header .card hr {
-	border-color: initial;
-}
-header .card .lead .btn {
-	width: 175px;
-}
-header .card .lead .btn-left {
-	margin-right: 20px;
-}
-header .card .lead .btn span {
-	display: inline-block;
-	height: 40px;
-}
-header .card .lead .btn span span {
-	vertical-align : middle;
-}
-header .card .lead .text-muted {
-	font-size: 14px;
-	padding-top: 10px;
-}
-header .card .card-code {
-	background-color: #fff;
-	color: #000;
-	padding: 0px;
-}
-@media (max-width: 33em) {
-	header .card h1 {
-		font-size: 2.5rem;
-	}
-	header .card .lead .btn {
-		margin-bottom: 20px;
-	}
-}
-
-/* featured */
-#featured h2 {
-	padding-top: 60px;
-	padding-bottom: 30px;
-}
-#featured .featured-tagline {
-	font-style: italic;
-}
-#featured .featured-list-sm ul li {
-	font-size: 16px;
-	padding: 5px 0;
-}
-
-/* testimonials */
-#testimonials {
-	padding: 60px 0px;
-	text-align: center;
-}
-#testimonials ul {
-	list-style: none;
-	padding: 40px 0px;
-}
-#testimonials ul li {
-	font-style: italic;
-	padding: 10px 0;
-}
-
-/* feature */
-#feature h2 {
-	font-size: 48px;
-	padding-top: 60px;
-	padding-bottom: 30px;
-}
-#feature .feature-tagline {
-	font-style: italic;
-}
-#feature ul li {
-	font-size: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-#feature hr {
-	margin-top: 60px;
-}
-#feature .btn {
-	margin-top: 40px;
-}
-
-/* support */
-#support h2 {
-	padding-bottom: 20px;
-}
-#support h3 {
-	font-size: 1.3rem;
-	padding-bottom: 40px;
-}
-#support .card {
-	color: #000;
-	border: 0.0625rem solid #ccc;
-}
-#support .card-text {
-	min-height: 75px;
-}
-#support i {
-	color: #0275d8;
-}
-
-/* pricing */
-#pricing .pricing-tagline {
-	font-style: italic;
-}
-#pricing .table thead th {
-	text-align: center;
-}
-#pricing .table td {
-	text-align: center;
-}
-#pricing .fa-times {
-	color: #c9302c;
-}
-#pricing .fa-check-square-o {
-	color: #449D44;
-}
-
-/* product */
-#product h3 {
-	letter-spacing: 1px;
-	font-size: 18px;
-	font-weight: 700;
-}
-#product ul {
-	list-style: none;
-	padding-left: 0px;
-}
-#product ul li {
-	padding-top: 5px;
-}
-#product a {
-	color: #999;
-	font-size: 14px;
-	letter-spacing: 0.5px;
-}
-#product a:hover {
-	color: #fefefe;
-	opacity: 0.7;
-	text-decoration: none;
-    transition: all 0.4s ease-in-out 0s;
-}
-
-/* footer */
-footer a {
-	color: #666;
-}
-footer a:hover {
-	color: #666;
-	opacity: 0.7;
-	text-decoration: none;
-    transition: all 0.4s ease-in-out 0s;
-}
-footer hr {
-	border-color: #666;
-	margin: 20px;
-}
-footer .social a {
-	font-size: 24px;
-	padding: 0px 10px;
-}
-@media (max-width: 61em) {
-  footer {
-	padding: 20px 0;
-  }
-}
-</style>
