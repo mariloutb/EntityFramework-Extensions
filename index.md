@@ -5,24 +5,24 @@ layout: post
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="msvalidate.01" content="89359D9C492A475C0061398008D105FB" />
+		
+		<!-- seo !-->
 		<meta name="description" content="Improve Entity Framework performance with Bulk SaveChanges and Bulk Operations">
 		<meta name="keywords" content="EntityFramework BulkSaveChanges BulkInsert BulkUpdate BulkDelete BulkMerge Insert Update Delete Merge SQLServer SQLAzure SQLCompact MySQL SQLite">
-		<meta name="msvalidate.01" content="89359D9C492A475C0061398008D105FB" />
 		<title>Entity Framework Bulk Operations | Improve Entity Framework performance with Bulk SaveChanges, Insert, update, delete and merge for SQL Server, SQL Azure, SQL Compact, MySQL and SQLite.</title>
-		<link rel="icon" type="image/png" href="http://entityframework-extensions.net/images/logo.png">
+		
+		<!-- icon/css !-->
+		<link rel="icon" type="image/png" href="http://entityframework-plus.net/images/logo.png">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="http://entityframework-extensions.net/css/github.css">
+		<link rel="stylesheet" type="text/css" href="http://entityframework-plus.net/css/github2.css">
 	</head>
 	
 	<body>
   
-		<!-- anchor !-->
-		<a id="download" href="#"></a>
-		<a id="github" href="#"></a>
-		
 		<!-- top-header !-->
 		<div id="top-header">
 			<div class="container">
@@ -30,8 +30,8 @@ layout: post
 					<a href="mailto:info@zzzprojects.com"><i class="fa fa-envelope"></i>&nbsp;&nbsp;info@zzzprojects.com</a>
 					<a href="https://www.facebook.com/zzzprojects" target="_blank"><i class="fa fa-facebook"></i></a>
 					<a href="https://twitter.com/zzzprojects" target="_blank"><i class="fa fa-twitter"></i></a>
-					<a href="https://plus.google.com/+Zzzprojects_NetSQL/posts" target="_blank"><i class="fa fa-google-plus"></i></a>
-					<a href="http://zzzprojects.us9.list-manage.com/subscribe?u=cecbc4775cf67bf1ff82018af&id=4765ffa5f8" target="_blank" class="hidden-sm-down"><i class="fa fa-newspaper-o"></i></a>
+					<a href="https://plus.google.com/+Zzzprojects_NetSQL" target="_blank"><i class="fa fa-google-plus"></i></a>
+					<a href="http://zzzprojects.us9.list-manage.com/subscribe?u=cecbc4775cf67bf1ff82018af&id=4765ffa5f8" target="_blank" class="hidden-xs-down"><i class="fa fa-newspaper-o"></i></a>
 				</div>
 			</div>
 		</div>
@@ -44,17 +44,18 @@ layout: post
 						<div class="card">
 							<div class="card-block">
 								<h3 class="card-title">Entity Framework Extensions</h3>
-								<h1>Improve Entity Framework performance with Bulk SaveChanges and Bulk Operations</h1>
+								<hr class="m-y-md" />
+								<h1>Improve EF performance with BulkSaveChanges and Bulk Operations</h1>
 								<hr class="m-y-md" />
 								<div class="lead">
 									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
+									<br />
 									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/entity-framework-extensions-v.svg" alt="download" /></a>
 									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/entity-framework-extensions-d.svg" alt="" /></a>			
+									<div class="text-muted">* PRO Version unlocked for the current month</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-1">
 					</div>
 					<div class="col-lg-6">
 						<div class="card">
@@ -87,23 +88,25 @@ context.BulkMerge(customers, operation => {
 			</div>
 		</header>
 		
-		<!-- anchor !-->
-		<a id="features" href="#"></a>
-		
-		<!-- features !-->
-		<div id="feature">
+		<!-- featured !-->
+		<div id="featured">
 			<div class="container">
 			
 				<!-- Improve Performance !-->
-				<h2>Improve Performance</h2>
+				<h2>Improve SaveChanges Performance</h2>
 				<div class="row">
 					<div class="col-lg-5">
-						<p class="feature-tagline">"Time is money" and your customers expect applications to respond as quickly as possible.</p>
-						<ul>
-							<li>Minimize the time your customers wait</li>
-							<li>Maximize the time your customers work</li>
-							<li>Make your customers happy!</li>
-						</ul>						
+						<p class="featured-tagline">Use <span class="text-bold-red">scalable</span> bulk operations and always get the best <span class="text-bold-red">performance</span> available for your database provider.</p>
+						<ul class="featured-list-sm">
+							<li>SQL Server 2008+</li>
+							<li>SQL Azure</li>
+							<li>SQL Compact</li>
+							<li>MySQL</li>
+							<li>SQLite</li>
+							<li>PostgreSQL <i>(Coming soon)</i></li>
+							<li>Oracle <i>(Coming soon)</i></li>
+						</ul>	
+						<p>We still doesn't support your provider? Let us know and we will make it happen: <a href="mailto:info@zzzprojects.com">info@zzzprojects.com</a></p>
 					</div>
 					<div class="col-lg-7">
 						<table class="table table-striped table-hover" style="background-color: white;">
@@ -151,22 +154,39 @@ context.BulkMerge(customers, operation => {
 							</tr>
 						</table>
 						
-						<p>* Benchmark for SQL Server</p>
+						<p class="text-muted">* Benchmark for SQL Server</p>
 					</div>
 				</div>
-				
-				<hr class="m-y-md" />
-				
+			</div>
+		</div>
+		
+		<!-- testimonials !-->
+		<div id="testimonials">
+			<div class="container">
+				<h2>Amazing <span class="text-bold-red">performance</span>, outstanding <span class="text-bold-red">support</span>!</h2>
+				<ul>
+					<li>- We were very, very pleased with the customer support. There was no question, problem or wish, that was not answered AND solved within days! We think that’s very unique! Kelmens Beka-software</li>
+					<li>- We are currently using Bulk Operations in over 250 computers, and users are happy for the performance and stability it guarantees. Eric... Transtur.cu</li>
+					<li>- It's great.  It took me 5 minutes to implement it and it makes my application 100x more responsive for certain db operations Dave Weisbeigh</li>
+				</ul>
+				<p><span class="text-bold-red">Share</span> your experience, we love to hear from you: <a href="mailto:info@zzzprojects.com">info@zzzprojects.com</a></p>
+			</div>
+		</div>
+		
+		<!-- features !-->
+		<div id="feature">
+			<div class="container">
 				<!-- BulkSaveChanges !-->
+				<a id="bulk-savechanges" href="#"></a>
 				<h2>Bulk SaveChanges</h2>
 				<div class="row">
 					<div class="col-lg-5">
-						<p class="feature-tagline">Improving your application performance couldn’t be made easier!</p>
+						<p class="feature-tagline">Improving your applications performance couldn’t have been made <span class="text-bold-red">easier</span>!</p>
 						<ul>
 							<li>Easy to use</li>
 							<li>Easy to customize</li>
+							<li>Easy to maintain</li>
 						</ul>
-
 					</div>
 					<div class="col-lg-7">
 {% highlight csharp %}
@@ -182,13 +202,15 @@ context.BulkSaveChanges(operation => operation.BatchSize = 1000);
 				<hr class="m-y-md" />
 				
 				<!-- Bulk Operations !-->
+				<a id="bulk-operations" href="#"></a>
 				<h2>Bulk Operations</h2>
 				<div class="row">
 					<div class="col-lg-5">
-						<p class="feature-tagline">Join thousands of projects already using reliable and robust bulk operations.</p>
+						<p class="feature-tagline">Use <span class="text-bold-red">flexible</span> features to overcome Entity Framework limitations</p>
 						<ul>
-							<li>Maximized performance</li>
-							<li>Maximized user experience</li>
+							<li>Choose batch size</li>
+							<li>Choose columns</li>
+							<li>Choose primary key</li>
 						</ul>
 						
 					</div>
@@ -205,14 +227,14 @@ context.BulkMerge(customers);
 				<hr class="m-y-md" />
 				
 				<!-- Flexible Features !-->
-				<h2>Flexible Features</h2>
+				<a id="bulk-from-linq-query" href="#"></a>
+				<h2>Bulk from LINQ Query</h2>
 				<div class="row">
 					<div class="col-lg-5">
-						<p class="feature-tagline">Don’t be limited by Entity Framework and customize operation like you really want.</p>
+						<p class="feature-tagline">Perform bulk operations from LINQ Query without loading entities in the context.</p>
 						<ul>
-							<li>Choose your batch size</li>
-							<li>Choose your columns</li>
-							<li>Choose your primary key</li>
+							<li>DeleteFromQuery</li>
+							<li>UpdateFromQuery</li>
 						</ul>
 						
 					</div>
@@ -228,9 +250,74 @@ context.BulkMerge(customers, operation => {
 			</div>
 		</div>
 		
-		<!-- anchor !-->
-		<a id="pro" href="#"></a>
 		
+		<!-- anchor !-->
+		<a id="support" href="#">
+		<!-- support !-->
+		<div id="support">
+			<div class="container">
+				<h2>Test our outstanding Support</h2>
+				<h3>We usually answer within the next business day, hour, or minutes!</h3>
+				<div class="row">
+					<hr class="hidden-sm-up" />
+					<div class="col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-block">
+								<h4 class="card-title">Contact Us</h4>
+							</div>
+							<a href="mailto:info@zzzprojects.com"><i class="fa fa-users fa-5x"></i></a>
+							<div class="card-block">
+								<p class="card-text">Email our team for any type of questions. We love to hear from you!</p>
+								<a href="mailto:info@zzzprojects.com">info@zzzprojects.com</a>
+							</div>
+						</div>
+					</div>
+					<hr class="hidden-sm-up" />
+					<div class="col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-block">
+								<h4 class="card-title">Documentation</h4>
+							</div>
+							<a href="https://github.com/zzzprojects/EntityFramework-Extensions/wiki" target="_blank"><i class="fa fa-folder-open fa-5x"></i></a>
+							<div class="card-block">
+								<p class="card-text">Consult our complete documentation to help you getting started.</p>
+								<a href="https://github.com/zzzprojects/EntityFramework-Extensions/wiki" target="_blank">Documentation</a>
+							</div>
+						</div>
+					</div>
+					<hr class="hidden-sm-up" />
+					<div class="col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-block">
+								<h4 class="card-title">Forum</h4>
+							</div>
+							<a href="https://github.com/zzzprojects/EntityFramework-Extensions/issues" target="_blank"><i class="fa fa-weixin fa-5x"></i></a>
+							<div class="card-block">
+								<p class="card-text">Visit the forum to propose new features or to discuss about the library.</p>
+								<a href="https://github.com/zzzprojects/EntityFramework-Extensions/issues" target="_blank">Forum</a>
+							</div>
+						</div>
+					</div>
+					<hr class="hidden-sm-up" />
+					<div class="col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-block">
+								<h4 class="card-title">Open Source</h4>
+							</div>
+							<a href="https://github.com/zzzprojects/EntityFramework-Extensions" target="_blank"><i class="fa fa-github fa-5x"></i></a>
+							<div class="card-block">
+								<p class="card-text">Access the partial source of the library you're using. (Under development)</p>
+								<a href="https://github.com/zzzprojects/EntityFramework-Extensions" target="_blank">GitHub</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- anchor !-->
+		<a id="pricing" href="#"></a>
+		<a id="pro" href="#"></a>
 		<!-- pricing !-->
 		<div id="pricing">
 			<div class="container">
@@ -238,16 +325,16 @@ context.BulkMerge(customers, operation => {
 					<div class="col-lg-6">
 						<h2>Pricing</h2>
 						<hr class="m-y-md" />
-						<p class="pricing-tagline">Dramatically improve your application performance</p>
+						<p class="pricing-tagline">Join thousands of projects already using entity framework extensions and make <span class="text-bold-red">YOUR</span> customers happy.</p>
 						<ul>
-							<li>Without learning a new product</li>
-							<li>Without learning a new API</li>
-							<li>Work as intended!</li>
+							<li>Improve applications responsivity</li>
+							<li>Minimize time your customers wait</li>
+							<li>Maximize time your customers work</li>
 						</ul>
+						<p class="pricing-tagline">"Time is money" and your customers expect applications to respond as quickly as possible.</p>						
+						<p class="pricing-tagline">"B.U.L.K" four letters that will dramatically changes your applications performance forever.</p>						
 						<hr class="m-y-md" />
-						<p>Every month, a <a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank">FREE trial</a> of the PRO version is available to let you evaluate all its features without limitations.</p>					
-						<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/entity-framework-extensions-v.svg" alt="download" /></a>
-						<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/entity-framework-extensions-d.svg" alt="" /></a>		
+						<p>Every month, a <a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank">FREE trial</a> of the PRO version is available to let you evaluate all its features without limitations.</p>						
 					</div>
 					<div class="col-lg-6">
 						<table class="table table-hover table-bordered">
@@ -352,68 +439,6 @@ context.BulkMerge(customers, operation => {
 				</div>
 			</div>
 		</div>
-		
-		<!-- support !-->
-		<div id="support">
-			<div class="container">
-				<h2>Test our Outstanding Support</h2>
-				<h3>We usually answer within the next business day, hour, or minutes!</h3>
-				<div class="row">
-					<hr class="hidden-sm-up" />
-					<div class="col-sm-6 col-lg-3">
-						<div class="card">
-							<div class="card-block">
-								<h4 class="card-title">Documentation</h4>
-							</div>
-							<a href="https://github.com/zzzprojects/EntityFramework-Extensions/wiki" target="_blank"><i class="fa fa-folder-open fa-5x"></i></a>
-							<div class="card-block">
-								<p class="card-text">Consult our complete documentation to help you getting started.</p>
-								<a href="https://github.com/zzzprojects/EntityFramework-Extensions/wiki" target="_blank">Documentation</a>
-							</div>
-						</div>
-					</div>
-					<hr class="hidden-sm-up" />
-					<div class="col-sm-6 col-lg-3">
-						<div class="card">
-							<div class="card-block">
-								<h4 class="card-title">Contact Us</h4>
-							</div>
-							<a href="mailto:info@zzzprojects.com"><i class="fa fa-users fa-5x"></i></a>
-							<div class="card-block">
-								<p class="card-text">Email our team for any type of questions. We love to hear from you!</p>
-								<a href="mailto:info@zzzprojects.com">info@zzzprojects.com</a>
-							</div>
-						</div>
-					</div>
-					<hr class="hidden-sm-up" />
-					<div class="col-sm-6 col-lg-3">
-						<div class="card">
-							<div class="card-block">
-								<h4 class="card-title">Forum</h4>
-							</div>
-							<a href="https://github.com/zzzprojects/EntityFramework-Extensions/issues" target="_blank"><i class="fa fa-weixin fa-5x"></i></a>
-							<div class="card-block">
-								<p class="card-text">Visit the forum to propose new features or to discuss about the library.</p>
-								<a href="https://github.com/zzzprojects/EntityFramework-Extensions/issues" target="_blank">Forum</a>
-							</div>
-						</div>
-					</div>
-					<hr class="hidden-sm-up" />
-					<div class="col-sm-6 col-lg-3">
-						<div class="card">
-							<div class="card-block">
-								<h4 class="card-title">Open Source</h4>
-							</div>
-							<a href="https://github.com/zzzprojects/EntityFramework-Extensions" target="_blank"><i class="fa fa-github fa-5x"></i></a>
-							<div class="card-block">
-								<p class="card-text">Access the partial source of the library you're using. (Under development)</p>
-								<a href="https://github.com/zzzprojects/EntityFramework-Extensions" target="_blank">GitHub</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<!-- other product !-->
 		<div id="product">
@@ -422,15 +447,14 @@ context.BulkMerge(customers, operation => {
 					<div class="col-lg-3">
 						<h3>Entity Framework</h3>
 						<ul>
-							<li><a href="http://www.zzzprojects.com/products/dotnet-development/entity-framework-extensions/" target="_blank">Entity Framework Extensions</a></li>
-							<li><a href="https://github.com/zzzprojects/EntityFramework-Plus" target="_blank">Entity Framework Plus (EF+)</a></li>
+							<li><a href="http://entityframework-extensions.net/" target="_blank">Entity Framework Extensions</a></li>
+							<li><a href="http://entityframework-plus.net/" target="_blank">Entity Framework Plus (EF+)</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-3">
 						<h3>Bulk Operations</h3>
 						<ul>
-							<li><a href="http://www.zzzprojects.com/products/dotnet-development/entity-framework-extensions/" target="_blank">.NET Entity Framework Extensions</a></li>
-							<li><a href="http://www.zzzprojects.com/products/dotnet-development/bulk-operations/" target="_blank">.NET Bulk Operations</a></li>
+							<li><a href="http://bulk-operations.net/" target="_blank">Bulk Operations</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-3">
@@ -443,7 +467,7 @@ context.BulkMerge(customers, operation => {
 					<div class="col-lg-3">
 						<h3>Others</h3>
 						<ul>
-							<li><a href="http://www.zzzprojects.com/products/dotnet-development/extension-methods/" target="_blank">Extension Methods</a></li>
+							<li><a href="https://github.com/zzzprojects/Z.ExtensionMethods" target="_blank">Extension Methods</a></li>
 							<li><a href="https://github.com/zzzprojects/LINQ-Async" target="_blank">LINQ Async</a></li>
 						</ul>
 					</div>
@@ -472,7 +496,7 @@ context.BulkMerge(customers, operation => {
 		</footer>
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="js/tether.min.js"></script>
+	<script src="http://entityframework-plus.net/js/tether.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -522,11 +546,9 @@ context.BulkMerge(customers, operation => {
 .highlight * {
 	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
-.text-bold {
+.text-bold-red {
+	color: #c00;
 	font-weight: 700;
-}
-.text-green {
-	color: rgb(68, 157, 68);
 }
 @media (max-width: 61em) {
 	.text-center-md-down {
@@ -561,19 +583,22 @@ header {
 	border-top: 1px solid #333;
 	padding: 40px 0px;
 }
-#announcement {
-	background-color: #c00;
-	color: #f1f1f1;
-	font-weight: 700;
-	font-style: italic;
-	padding: 5px; 0px;
+#featured {
+	border-bottom: 1px solid #ddd;
+    border-top: 1px solid #eee;
+	padding-bottom: 60px;
 }
-#feature {
+#testimonials {
     background: -moz-linear-gradient(top, #ddd, #f2f2f2);
     background: -webkit-linear-gradient(top, #ddd, #f2f2f2);
     background: -ms-linear-gradient(top, #ddd, #f2f2f2);
     background: -o-linear-gradient(top, #ddd, #f2f2f2);
     background: linear-gradient(top, #ddd, #f2f2f2);
+	border-bottom: 1px solid #ddd;
+    border-top: 1px solid #eee;
+	padding-bottom: 60px;
+}
+#feature {
 	border-bottom: 1px solid #ddd;
     border-top: 1px solid #eee;
 	padding-bottom: 60px;
@@ -584,15 +609,17 @@ header {
 	padding-bottom: 60px;
 }
 #support {
-	background: -moz-linear-gradient(top, #eee, #bbb);
-    background: -webkit-linear-gradient(top, #eee, #bbb);
-    background: -ms-linear-gradient(top, #eee, #bbb);
-    background: -o-linear-gradient(top, #eee, #bbb);
-    background: linear-gradient(top, #eee, #bbb);
+	background: -moz-linear-gradient(top, #222, #333);
+    background: -webkit-linear-gradient(top, #222, #333);
+    background: -ms-linear-gradient(top, #222, #333);
+    background: -o-linear-gradient(top, #222, #333);
+    background: linear-gradient(top, #222, #333);
+	border-bottom: 1px solid #ddd;
+    border-top: 1px solid #eee;
+	color: #fff;
+	text-align: center;
 	padding-top: 60px;
 	padding-bottom: 60px;
-	border-bottom: 1px solid #aaa;
-	border-top: 1px solid #ccc;
 }
 #product {
     background: -moz-linear-gradient(top, #111, #222);
@@ -620,8 +647,7 @@ footer {
 /* top-header */
 #top-header a {
 	color: #fefefe;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 0 10px;
 	text-decoration: none;
 } 
 #top-header a:hover {
@@ -633,12 +659,12 @@ footer {
 header .card {
 	background-color: transparent;
 	border: none;
-	color: #f1f1f1;
-}
-header .card h3 {
-	font-size: 3.0rem;
+	color: #fff;
 }
 header .card h1 {
+	font-size: 2.3rem;
+}
+header .card h3 {
 	font-size: 1.3rem;
 }
 header .card hr {
@@ -662,33 +688,10 @@ header .card .lead .text-muted {
 	padding-top: 10px;
 }
 header .card .card-code {
-	background-color: #f1f1f1;
-	border: 2px solid #444;
+	background-color: #fff;
 	color: #000;
-	min-height: 350px;
-}
-header .card .card-code {
 	padding: 0px;
 }
-header .card .card-code .highlight,
-header .card .card-code .highlight pre {
-	background-color: transparent;
-	border: none;
-}
-header .card .card-contents {
-	font-size: 18px;
-}
-
-header .card .card-contents a {
-	color: #f1f1f1;
-}
-
-header .card .card-contents a:hover {
-	opacity: 0.7;
-	text-decoration: none;
-    transition: all 0.4s ease-in-out 0s;
-}
-
 @media (max-width: 33em) {
 	header .card h1 {
 		font-size: 2.5rem;
@@ -698,55 +701,77 @@ header .card .card-contents a:hover {
 	}
 }
 
-/* feature */
-#feature h2 {
-	font-size: 48px;
-	letter-spacing: 4px;
+/* featured */
+#featured h2 {
 	padding-top: 60px;
 	padding-bottom: 30px;
 }
-#feature h3 {
-	letter-spacing: 1px;
+#featured .featured-tagline {
+	font-style: italic;
+}
+#featured .featured-list-sm ul li {
 	font-size: 16px;
-	font-weight: 700;
-	padding-top: 10px;
+	padding: 5px 0;
 }
 
-#feature hr {
-	margin-top: 60px;
+/* testimonials */
+#testimonials {
+	padding: 60px 0px;
+	text-align: center;
+}
+#testimonials ul {
+	list-style: none;
+	padding: 40px 0px;
+}
+#testimonials ul li {
+	font-style: italic;
+	padding: 10px 0;
 }
 
+/* feature */
+#feature h2 {
+	font-size: 48px;
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+#feature .feature-tagline {
+	font-style: italic;
+}
 #feature ul li {
 	font-size: 20px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-
-#feature .feature-tagline {
-	font-style: italic;
+#feature hr {
+	margin-top: 60px;
 }
-
 #feature .btn {
 	margin-top: 40px;
 }
-@media (min-width: 62em) {
-	#feature .row .col-lg-6:first-child {
-		padding-right: 45px;
-	}
-	#feature .row .col-lg-6:last-child {
-		padding-left: 45px;
-	}
+
+/* support */
+#support h2 {
+	padding-bottom: 20px;
+}
+#support h3 {
+	font-size: 1.3rem;
+	padding-bottom: 40px;
+}
+#support .card {
+	color: #000;
+	border: 0.0625rem solid #ccc;
+}
+#support .card-text {
+	min-height: 75px;
+}
+#support i {
+	color: #0275d8;
 }
 
 /* pricing */
-#pricing h2 {
-	margin-bottom: -10px;
-}
-
 #pricing .pricing-tagline {
 	font-style: italic;
 }
-
 #pricing .table thead th {
 	text-align: center;
 }
@@ -758,27 +783,6 @@ header .card .card-contents a:hover {
 }
 #pricing .fa-check-square-o {
 	color: #449D44;
-}
-
-/* support */
-#support {
-	text-align: center;
-}
-#support h2 {
-	padding-bottom: 20px;
-}
-#support h3 {
-	font-size: 20px;
-	padding-bottom: 40px;
-}
-#support .card {
-	border: 0.0625rem solid #ccc;
-}
-#support .card-text {
-	min-height: 75px;
-}
-#support i {
-	color: #0275d8;
 }
 
 /* product */
@@ -801,21 +805,12 @@ header .card .card-contents a:hover {
 }
 #product a:hover {
 	color: #fefefe;
-	opacity: 0.9;
+	opacity: 0.7;
 	text-decoration: none;
     transition: all 0.4s ease-in-out 0s;
 }
 
 /* footer */
-@media (max-width: 61em) {
-  footer {
-	padding: 20px 0;
-  }
-}
-footer hr {
-	border-color: #666;
-	margin: 20px;
-}
 footer a {
 	color: #666;
 }
@@ -825,8 +820,17 @@ footer a:hover {
 	text-decoration: none;
     transition: all 0.4s ease-in-out 0s;
 }
+footer hr {
+	border-color: #666;
+	margin: 20px;
+}
 footer .social a {
 	font-size: 24px;
 	padding: 0px 10px;
+}
+@media (max-width: 61em) {
+  footer {
+	padding: 20px 0;
+  }
 }
 </style>
