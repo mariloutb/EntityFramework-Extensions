@@ -259,7 +259,7 @@ context.Customers
 		</div>
 		
 		<!-- support !-->
-		<a id="support" href="#"></a>
+		<a id="supports" href="#"></a>
 		<div id="support">
 			<div class="container">
 				<h2>Test our outstanding Support</h2>
