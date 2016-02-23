@@ -62,9 +62,6 @@ layout: post
 						<div class="card">
 							<div class="card-block card-code">
 {% highlight csharp %}
-var context = new CustomerContext();
-// ... context code ...
-
 // Easy to use
 context.BulkSaveChanges();
 
@@ -247,8 +244,6 @@ context.BulkMerge(customers, operation => {
 					</div>
 					<div class="col-lg-7">
 {% highlight csharp %}
-var context = new CustomerContext();
-
 // DELETE all customers that are inactive for more than 2 years
 context.Customers
     .Where(x => x.LastLogin < DateTime.Now.AddYears(-2))
