@@ -165,9 +165,9 @@ context.BulkMerge(customers, operation => {
 			<div class="container">
 				<h2>Amazing <span class="text-bold-red">performance</span>, outstanding <span class="text-bold-red">support</span>!</h2>
 				<ul>
-					<li>- We were very, very pleased with the customer support. There was no question, problem or wish, that was not answered AND solved within days! We think that’s very unique! Kelmens Beka-software</li>
-					<li>- We are currently using Bulk Operations in over 250 computers, and users are happy for the performance and stability it guarantees. Eric... Transtur.cu</li>
-					<li>- It's great.  It took me 5 minutes to implement it and it makes my application 100x more responsive for certain db operations Dave Weisbeigh</li>
+					<li>- "We were very, very pleased with the customer support. There was no question, problem or wish, that was not answered AND solved within days! We think that’s very unique!" Klemens Stelzmüller, <a href="http://www.beka-software.at/" target="_blank">Beka-software</a></li>
+					<li>- "I’d definitely recommend it, as it is a great product with a great performance and reliability." Eric Rey, <a href="http://www.transturcarrental.com/" target="_blank">Transtur</a></li>
+					<li>- "It’s great. It took me 5 minutes to implement it and makes my application 100x more responsive for certain database operations. Fill a big hole in Entity Framework." Dave Weisberg</li>
 				</ul>
 				<p><span class="text-bold-red">Share</span> your experience, we love to hear from you: <a href="mailto:info@zzzprojects.com">info@zzzprojects.com</a></p>
 			</div>
@@ -291,10 +291,10 @@ context.BulkMerge(customers, operation => {
 							<div class="card-block">
 								<h4 class="card-title">Forum</h4>
 							</div>
-							<a href="https://github.com/zzzprojects/EntityFramework-Extensions/issues" target="_blank"><i class="fa fa-weixin fa-5x"></i></a>
+							<a href="http://zzzprojects.uservoice.com/forums/283924-entity-framework-plus" target="_blank"><i class="fa fa-weixin fa-5x"></i></a>
 							<div class="card-block">
 								<p class="card-text">Visit the forum to propose new features or to discuss about the library.</p>
-								<a href="https://github.com/zzzprojects/EntityFramework-Extensions/issues" target="_blank">Forum</a>
+								<a href="http://zzzprojects.uservoice.com/forums/283924-entity-framework-plus" target="_blank">Forum</a>
 							</div>
 						</div>
 					</div>
@@ -331,7 +331,7 @@ context.BulkMerge(customers, operation => {
 							<li>Minimize time your customers wait</li>
 							<li>Maximize time your customers work</li>
 						</ul>
-						<p class="pricing-tagline">"Time is money" and your customers expect applications to respond as quickly as possible.</p>						
+						<p class="pricing-tagline">"Time Is Money" and your customers expect applications to respond as quickly as possible.</p>						
 						<p class="pricing-tagline">"B.U.L.K" four letters that will dramatically changes your applications performance forever.</p>						
 						<hr class="m-y-md" />
 						<p>Every month, a <a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank">FREE trial</a> of the PRO version is available to let you evaluate all its features without limitations.</p>						
