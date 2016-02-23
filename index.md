@@ -106,7 +106,7 @@ context.BulkMerge(customers, operation => {
 						</ul>	
 					</div>
 					<div class="col-lg-7">
-						<table class="table table-striped table-hover" style="background-color: white;">
+						<table class="table table-striped table-hover">
 							<tr class="thead-inverse">
 								<th>Operations</th>
 								<th>1,000 Entities</th>
