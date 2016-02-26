@@ -49,10 +49,10 @@ layout: post
 								<h1>Improve EF performance with BulkSaveChanges and Bulk Operations</h1>
 								<hr class="m-y-md" />
 								<div class="lead">
-									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
+									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank" class="btn btn-success btn-lg btn-left" role="button" onclick="ga('send', 'event', { eventAction: 'download'});"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
 									<br />
-									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/entity-framework-extensions-v.svg" alt="download" /></a>
-									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/entity-framework-extensions-d.svg" alt="" /></a>			
+									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank" onclick="ga('send', 'event', { eventAction: 'download'});"><img src="http://entityframework-plus.net/images/nuget/entity-framework-extensions-v.svg" alt="download" /></a>
+									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank" onclick="ga('send', 'event', { eventAction: 'download'});"><img src="http://entityframework-plus.net/images/nuget/entity-framework-extensions-d.svg" alt="" /></a>			
 									<div class="text-muted">* PRO Version unlocked for the current month</div>
 								</div>
 							</div>
@@ -284,10 +284,10 @@ context.Customers
 							<div class="card-block">
 								<h4 class="card-title">Documentation</h4>
 							</div>
-							<a href="https://github.com/zzzprojects/EntityFramework-Extensions/wiki" target="_blank"><i class="fa fa-folder-open fa-5x"></i></a>
+							<a href="https://github.com/zzzprojects/EntityFramework-Extensions/wiki" target="_blank" onclick="ga('send', 'event', { eventAction: 'github'});"><i class="fa fa-folder-open fa-5x"></i></a>
 							<div class="card-block">
 								<p class="card-text">Consult our complete documentation to help you getting started.</p>
-								<a href="https://github.com/zzzprojects/EntityFramework-Extensions/wiki" target="_blank">Documentation</a>
+								<a href="https://github.com/zzzprojects/EntityFramework-Extensions/wiki" target="_blank" onclick="ga('send', 'event', { eventAction: 'github'});">Documentation</a>
 							</div>
 						</div>
 					</div>
@@ -297,10 +297,10 @@ context.Customers
 							<div class="card-block">
 								<h4 class="card-title">Forum</h4>
 							</div>
-							<a href="http://zzzprojects.uservoice.com/forums/283924-entity-framework-plus" target="_blank"><i class="fa fa-weixin fa-5x"></i></a>
+							<a href="http://zzzprojects.uservoice.com/forums/283924-entity-framework-plus" target="_blank" onclick="ga('send', 'event', { eventAction: 'forum'});"><i class="fa fa-weixin fa-5x"></i></a>
 							<div class="card-block">
 								<p class="card-text">Visit the forum to propose new features or to discuss about the library.</p>
-								<a href="http://zzzprojects.uservoice.com/forums/283924-entity-framework-plus" target="_blank">Forum</a>
+								<a href="http://zzzprojects.uservoice.com/forums/283924-entity-framework-plus" target="_blank" onclick="ga('send', 'event', { eventAction: 'forum'});">Forum</a>
 							</div>
 						</div>
 					</div>
@@ -310,10 +310,10 @@ context.Customers
 							<div class="card-block">
 								<h4 class="card-title">Open Source</h4>
 							</div>
-							<a href="https://github.com/zzzprojects/EntityFramework-Extensions" target="_blank"><i class="fa fa-github fa-5x"></i></a>
+							<a href="https://github.com/zzzprojects/EntityFramework-Extensions" target="_blank" onclick="ga('send', 'event', { eventAction: 'github'});"><i class="fa fa-github fa-5x"></i></a>
 							<div class="card-block">
 								<p class="card-text">Access the partial source of the library you're using. (Under development)</p>
-								<a href="https://github.com/zzzprojects/EntityFramework-Extensions" target="_blank">GitHub</a>
+								<a href="https://github.com/zzzprojects/EntityFramework-Extensions" target="_blank" onclick="ga('send', 'event', { eventAction: 'github'});">GitHub</a>
 							</div>
 						</div>
 					</div>
@@ -338,7 +338,7 @@ context.Customers
 						<p class="pricing-tagline">"Time Is Money" and your customers expect applications to respond as quickly as possible.</p>						
 						<p class="pricing-tagline">"B.U.L.K" four letters that will dramatically changes your applications performance forever.</p>						
 						<hr class="m-y-md" />
-						<p>Every month, a <a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank">FREE trial</a> of the PRO version is available to let you evaluate all its features without limitations.</p>						
+						<p>Every month, a <a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank" onclick="ga('send', 'event', { eventAction: 'download'});">FREE trial</a> of the PRO version is available to let you evaluate all its features without limitations.</p>						
 					</div>
 					<div class="col-lg-6">
 						<table class="table table-hover table-bordered">
