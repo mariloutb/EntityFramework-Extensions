@@ -10,9 +10,9 @@ layout: post
 		<meta name="msvalidate.01" content="89359D9C492A475C0061398008D105FB" />
 		
 		<!-- seo !-->
-		<meta name="description" content="Improve Entity Framework performance with Bulk SaveChanges and Bulk Operations">
+		<meta name="description" content="Improve Entity Framework Performance with Bulk SaveChanges and Bulk Insert, Update, Delete and Merge">
 		<meta name="keywords" content="EntityFramework BulkSaveChanges BulkInsert BulkUpdate BulkDelete BulkMerge Insert Update Delete Merge SQLServer SQLAzure SQLCompact MySQL SQLite">
-		<title>Entity Framework Bulk Operations | Improve Entity Framework performance with Bulk SaveChanges, Insert, update, delete and merge for SQL Server, SQL Azure, SQL Compact, MySQL and SQLite.</title>
+		<title>Entity Framework Bulk SaveChanges & Bulk Operations | Optimize EF Save Entities Performance with C# Bulk SaveChanges, Buk Insert, Update, Delete and Merge .NET Operations for SQL Server, SQL Azure, SQL Compact, MySQL and SQLite.</title>
 		
 		<!-- icon/css !-->
 		<link rel="icon" type="image/png" href="http://entityframework-plus.net/images/logo.png">
@@ -46,7 +46,7 @@ layout: post
 							<div class="card-block">
 								<h3 class="card-title">Entity Framework Extensions</h3>
 								<hr class="m-y-md" />
-								<h1>Improve EF performance with BulkSaveChanges and Bulk Operations</h1>
+								<h1>Improve EF Performance with Bulk SaveChanges and Bulk Insert, Update, Delete and Merge</h1>
 								<hr class="m-y-md" />
 								<div class="lead">
 									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank" class="btn btn-success btn-lg btn-left" role="button" onclick="ga('send', 'event', { eventAction: 'download'});"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
