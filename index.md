@@ -10,9 +10,9 @@ layout: post
 		<meta name="msvalidate.01" content="89359D9C492A475C0061398008D105FB" />
 		
 		<!-- seo !-->
-		<meta name="description" content="Improve Entity Framework Performance with Bulk SaveChanges and Bulk Insert, Update, Delete and Merge">
-		<meta name="keywords" content="EntityFramework BulkSaveChanges BulkInsert BulkUpdate BulkDelete BulkMerge Insert Update Delete Merge SQLServer SQLAzure SQLCompact MySQL SQLite">
-		<title>Entity Framework Bulk SaveChanges & Bulk Operations | Optimize EF Save Entities Performance with C# Bulk SaveChanges, Buk Insert, Update, Delete and Merge .NET Operations for SQL Server, SQL Azure, SQL Compact, MySQL and SQLite.</title>
+		<meta name="description" content="Improve Entity Framework Performance with Bulk SaveChanges and Bulk Insert, Update, Delete and Merge (SQLServer, SQLAzure, SQLCompact, MySQL, SQLite, .NET, ADO.NET, ASP.NET, C#, CSharp, MVC, MMVC, VB.NET)">
+		<meta name="keywords" content="EntityFramework BulkSaveChanges BulkInsert BulkUpdate BulkDelete BulkMerge Insert Update Delete Merge SQLServer SQLAzure SQLCompact MySQL SQLite .NET ADO.NET ASP.NET C# CSharp MVC MMVC VB.NET">
+		<title>Entity Framework Bulk SaveChanges & Bulk Operations | Optimize EF Save Entities Performance with C# Bulk SaveChanges, Buk Insert, Update, Delete and Merge .NET Operations. (SQLServer, SQLAzure, SQLCompact, MySQL, SQLite, .NET, ADO.NET, ASP.NET, C#, CSharp, MVC, MMVC, VB.NET)</title>
 		
 		<!-- icon/css !-->
 		<link rel="icon" type="image/png" href="http://entityframework-plus.net/images/logo.png">
