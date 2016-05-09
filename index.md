@@ -101,7 +101,7 @@ context.BulkMerge(customers, operation => {
 							<li>SQL Compact</li>
 							<li>MySQL</li>
 							<li>SQLite</li>
-							<li>PostgreSQL <i>(Coming soon)</i></li>
+							<li>PostgreSQL</li>
 							<li>Oracle <i>(Coming soon)</i></li>
 						</ul>	
 					</div>
