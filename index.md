@@ -557,11 +557,11 @@ context.Customers
 								</select> 
 								<br />
 								<select id="product_option" name="os0" class="form-control">
-									<option id="seat1" value="1 seat">Bulk Operations $599 (1 developper seat)</option>
-									<option id="seat2_4" value="2-4 seats" selected>Bulk Operations $799 (2-4 developper seats)</option>
-									<option id="seat5_9" value="5-9 seats">Bulk Operations $999 (5-9 developper seats)</option>
-									<option id="seat10_14" value="10-14 seats">Bulk Operations $1199 (10-14 developper seats)</option>
-									<option id="seat15_19" value="15-19 seats">Bulk Operations $1399 (15-19 developper seats)</option>
+									<option id="seat1" value="1 seat">Entity Framework Extensions $599 (1 developer seat)</option>
+									<option id="seat2_4" value="2-4 seats" selected>Entity Framework Extensions $799 (2-4 developer seats)</option>
+									<option id="seat5_9" value="5-9 seats">Entity Framework Extensions $999 (5-9 developer seats)</option>
+									<option id="seat10_14" value="10-14 seats">Entity Framework Extensions $1199 (10-14 developer seats)</option>
+									<option id="seat15_19" value="15-19 seats">Entity Framework Extensions $1399 (15-19 developer seats)</option>
 								</select> 
 							</fieldset>
 							<div class="checkbox">
@@ -674,18 +674,18 @@ context.Customers
 	  
 	  function selectProduct() {
 		if($("#provider_type").val() == "TSCGQDC4YR2MQ") {
-			$("#seat1").html("Entity Framework Extensions $799 (1 developper seat)");
-			$("#seat2_4").html("Entity Framework Extensions $999 (2-4 developper seats)");
-			$("#seat5_9").html("Entity Framework Extensions $1199 (5-9 developper seats)");
-			$("#seat10_14").html("Entity Framework Extensions $1399 (10-14 developper seats)");
-			$("#seat15_19").html("Entity Framework Extensions $1599 (15-19 developper seats)");
+			$("#seat1").html("Entity Framework Extensions $799 (1 developer seat)");
+			$("#seat2_4").html("Entity Framework Extensions $999 (2-4 developer seats)");
+			$("#seat5_9").html("Entity Framework Extensions $1199 (5-9 developer seats)");
+			$("#seat10_14").html("Entity Framework Extensions $1399 (10-14 developer seats)");
+			$("#seat15_19").html("Entity Framework Extensions $1599 (15-19 developer seats)");
 		}
 		else {
-			$("#seat1").html("Entity Framework Extensions $599 (1 developper seat)");
-			$("#seat2_4").html("Entity Framework Extensions $799 (2-4 developper seats)");
-			$("#seat5_9").html("Entity Framework Extensions $999 (5-9 developper seats)");
-			$("#seat10_14").html("Entity Framework Extensions $1199 (10-14 developper seats)");
-			$("#seat15_19").html("Entity Framework Extensions $1399 (15-19 developper seats)");
+			$("#seat1").html("Entity Framework Extensions $599 (1 developer seat)");
+			$("#seat2_4").html("Entity Framework Extensions $799 (2-4 developer seats)");
+			$("#seat5_9").html("Entity Framework Extensions $999 (5-9 developer seats)");
+			$("#seat10_14").html("Entity Framework Extensions $1199 (10-14 developer seats)");
+			$("#seat15_19").html("Entity Framework Extensions $1399 (15-19 developer seats)");
 		}
 	  }
 	  
