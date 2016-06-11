@@ -10,9 +10,9 @@ layout: post
 		<meta name="msvalidate.01" content="89359D9C492A475C0061398008D105FB" />
 		
 		<!-- seo !-->
-		<meta name="description" content="Improve Entity Framework Performance with Bulk SaveChanges and Bulk Insert, Update, Delete and Merge (SQLServer, SQLAzure, SQLCompact, MySQL, SQLite, .NET, ADO.NET, ASP.NET, C#, CSharp, MVC, MMVC, VB.NET)">
-		<meta name="keywords" content="EntityFramework BulkSaveChanges BulkInsert BulkUpdate BulkDelete BulkMerge Insert Update Delete Merge SQLServer SQLAzure SQLCompact MySQL SQLite .NET ADO.NET ASP.NET C# CSharp MVC MMVC VB.NET">
-		<title>Entity Framework Bulk SaveChanges & Bulk Operations | Optimize EF Save Entities Performance with C# Bulk SaveChanges, Buk Insert, Update, Delete and Merge .NET Operations. (SQLServer, SQLAzure, SQLCompact, MySQL, SQLite, .NET, ADO.NET, ASP.NET, C#, CSharp, MVC, MMVC, VB.NET)</title>
+		<meta name="description" content="Dramatically Improve EF Performance with Bulk SaveChanges and Bulk Operations (SQLServer, SQLAzure, SQLCompact, MySQL, SQLite, .NET, ADO.NET, ASP.NET, C#, CSharp, MVC, MMVC, VB.NET)">
+		<meta name="keywords" content="EntityFramework, EF6, BulkSaveChanges, BulkInsert, BulkUpdate, BulkDelete, BulkMerge, Insert, Update, Delete, Merge, SQLServer, SQLAzure, SQLCompact, MySQL, SQLite, .NET, ADO.NET, ASP.NET, C#, CSharp, MVC, MMVC, VB.NET">
+		<title>EF BulkSaveChanges & Bulk Operations | Dramatically Improve EF Performance with Bulk SaveChanges and Bulk Operations.</title>
 		
 		<!-- icon/css !-->
 		<link rel="icon" type="image/png" href="http://entityframework-plus.net/images/logo.png">
@@ -101,8 +101,8 @@ layout: post
 						<!-- navbar-bar-header !-->
 						<ul class="nav navbar-nav navbar-nav-header">
 							<li class="nav-item">
-								<h1>Entity Framework Extensions</h3>
-								<small>BulkSaveChanges and Bulk Operations</small>
+								<h1>Entity Framework Extensions
+								<small>EF BulkSaveChanges & Bulk Operations</small>
 								</h1>
 							</li>
 						</ul>
@@ -189,7 +189,7 @@ layout: post
 						<div class="card">
 							<div class="card-block">
 								<hr class="m-y-md" />
-								<h2>Improve EF Performance with Bulk SaveChanges and Bulk Operations</h2>
+								<h2>Dramatically Improve EF Performance with Bulk SaveChanges and Bulk Operations</h2>
 								<hr class="m-y-md" />
 								<div class="lead">
 									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank" class="btn btn-success btn-lg btn-left" role="button" onclick="ga('send', 'event', { eventAction: 'download'});"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
