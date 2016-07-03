@@ -194,8 +194,8 @@ layout: post
 								<div class="lead">
 									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank" class="btn btn-success btn-lg btn-left" role="button" onclick="ga('send', 'event', { eventAction: 'download'});"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
 									<br />
-									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank" onclick="ga('send', 'event', { eventAction: 'download'});"><img src="http://entityframework-plus.net/images/nuget/entity-framework-extensions-v.svg" alt="download" /></a>
-									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank" onclick="ga('send', 'event', { eventAction: 'download'});"><img src="http://entityframework-plus.net/images/nuget/entity-framework-extensions-d.svg" alt="" /></a>				
+									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank" onclick="ga('send', 'event', { eventAction: 'download'});"><img src="https://zzzprojects.github.io/images/nuget/entity-framework-extensions-v.svg" alt="download" /></a>
+									<a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank" onclick="ga('send', 'event', { eventAction: 'download'});"><img src="https://zzzprojects.github.io/images/nuget/entity-framework-extensions-d.svg" alt="" /></a>				
 									<div class="text-muted">* PRO Version unlocked for the current month</div>
 								</div>
 							</div>
