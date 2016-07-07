@@ -490,6 +490,20 @@ context.Customers
 						<hr class="m-y-md" />
 						<p>Every month, a <a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank" onclick="ga('send', 'event', { eventAction: 'download'});">FREE trial</a> of the PRO version is available to let you evaluate all its features without limitations.</p>
 						<hr class="m-y-md" />
+						<p>Looking for a <a class="text-bold-red">free & open source</a> library with must-have feature for Entity Framework?</p>
+						<p><a href="http://entityframework-plus.net/" target="_blank">Entity Framework Plus</a></p>
+						<ul>
+							<li>Auditing</li>
+							<li>Batch Delete</li>
+							<li>Batch Update</li>
+							<li>LINQ Dynamic</li>
+							<li>Query Cache</li>
+							<li>Query Deferred</li>
+							<li>Query Filter</li>
+							<li>Query Future</li>
+							<li>Query IncludeFilter</li>
+							<li>Query IncludeOptimized</li>
+						</ul>
 					</div>
 					<div class="col-lg-6">
 						<table class="table table-hover table-bordered">
