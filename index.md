@@ -564,9 +564,11 @@ context.Customers
 								<input type="hidden" name="on0" value="Seats">
 								<select id="provider_type" name="hosted_button_id" class="form-control" onchange="selectProduct()">
 									<option value="GS977QXB98R2C">SQL Server/ Azure Provider</option>
+									<option value="27ML36DSMHEQA">Oracle Provider</option>
+									<option value="32JM43GUXW4ZW">MySQL Provider</option>
+									<option value="TSCZ2KCM9QBVY">PostgreSQL</option>
 									<option value="5WVPWVNDGRHH6">SQL Compact Provider</option>
 									<option value="55WDUT7ENJBKU">SQLite Provider</option>
-									<option value="32JM43GUXW4ZW">MySQL Provider</option>
 									<option value="TSCGQDC4YR2MQ">ALL Providers</option>
 								</select> 
 								<br />
