@@ -110,7 +110,7 @@ layout: post
 						<!-- navbar-bar-menu !-->
 						<ul class="nav navbar-nav pull-xs-right navbar-nav-menu hidden-md-down">
 							<li class="nav-item">
-								<a class="nav-link" href="https://github.com/zzzprojects/EntityFramework-Extensions/wiki" target="_blank">Wiki</a>
+								<a class="nav-link" href="http://www.zzzprojects.com/entity-framework-extensions/docs" target="_blank">Wiki</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="https://github.com/zzzprojects/EntityFramework-Extensions/issues" target="_blank">Forum</a>
@@ -143,7 +143,7 @@ layout: post
 					<div class="col-lg-3">			
 						<h3>Menu</h3>
 						<ul>
-							<li><a class="nav-link" href="https://github.com/zzzprojects/EntityFramework-Extensions/wiki" target="_blank">Wiki</a></li>
+							<li><a class="nav-link" href="http://www.zzzprojects.com/entity-framework-extensions/docs" target="_blank">Wiki</a></li>
 							<li><a class="nav-link" href="https://github.com/zzzprojects/EntityFramework-Extensions/issues" target="_blank">Forum</a></li>
 							<li><a class="nav-link" href="#pro">PRO Version</a></li>
 							<li><a href="https://www.nuget.org/packages/Z.EntityFramework.Extensions/" target="_blank" class="btn btn-success" role="button" onclick="ga('send', 'event', { eventAction: 'download'});"><span><i class="fa fa-cloud-download"></i>&nbsp;<span>Download</span></span></a></li>
@@ -404,7 +404,7 @@ context.Customers
 				</div>
 				
 				<!-- more-feature !-->
-				<p class="more-feature"><a href="https://github.com/zzzprojects/EntityFramework-Extensions/wiki" target="_blank" class="btn btn-primary btn-lg" role="button"><span><i class="fa fa-book"></i>&nbsp;<span>View More Features</span></span></a></p>
+				<p class="more-feature"><a href="http://www.zzzprojects.com/entity-framework-extensions/docs" target="_blank" class="btn btn-primary btn-lg" role="button"><span><i class="fa fa-book"></i>&nbsp;<span>View More Features</span></span></a></p>
 				
 			</div>
 		</div>
@@ -435,10 +435,10 @@ context.Customers
 							<div class="card-block">
 								<h4 class="card-title">Wiki</h4>
 							</div>
-							<a href="https://github.com/zzzprojects/EntityFramework-Extensions/wiki" target="_blank" onclick="ga('send', 'event', { eventAction: 'github'});"><i class="fa fa-folder-open fa-5x"></i></a>
+							<a href="http://www.zzzprojects.com/entity-framework-extensions/docs" target="_blank" onclick="ga('send', 'event', { eventAction: 'github'});"><i class="fa fa-folder-open fa-5x"></i></a>
 							<div class="card-block">
 								<p class="card-text">Consult our complete documentation to help you getting started.</p>
-								<a href="https://github.com/zzzprojects/EntityFramework-Extensions/wiki" target="_blank" onclick="ga('send', 'event', { eventAction: 'github'});">Wiki</a>
+								<a href="http://www.zzzprojects.com/entity-framework-extensions/docs" target="_blank" onclick="ga('send', 'event', { eventAction: 'github'});">Wiki</a>
 							</div>
 						</div>
 					</div>
